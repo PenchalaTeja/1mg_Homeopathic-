@@ -1,1 +1,0 @@
-# 1mg_Homeopathic-
