@@ -1,6 +1,8 @@
 # 1Mg Homeopathic
 
  Scrape the homeopathic medicine data from online medicine delivery platform `1mg` using python library called Beautifulsoup (or similar) and collect information in the given format and make 2 tables using the data:
+ 
+URL = "https://www.1mg.com/categories/homeopathy-57"
 
 Table 1 : `medicine_name`
 
