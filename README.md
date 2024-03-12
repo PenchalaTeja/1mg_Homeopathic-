@@ -49,3 +49,10 @@ Once you have the database of 2 tables created.
     - Most used ingredient
     - Which brand has most greater than 4 point review medicine?
 - You are hired in a consultancy firm, one of their client want to open a homeopathic medicine store what is their total cost for open their store. Create an interactive dashboard for them to analyze and select best medicine for their store. (Use benefit area as a filter)
+
+DASHBOARD
+
+![image](https://github.com/PenchalaTeja/1mg_Homeopathic-/assets/156883419/d1c82f5b-14ef-442d-b7cc-8e3bb999bdb6)
+
+
+
