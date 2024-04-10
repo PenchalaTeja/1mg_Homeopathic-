@@ -1,58 +1,46 @@
-# 1Mg Homeopathic
+# 1mg_Homepathic
 
- Scrape the homeopathic medicine data from online medicine delivery platform `1mg` using python library called Beautifulsoup (or similar) and collect information in the given format and make 2 tables using the data:
- 
+## Introduction
+In the rapidly evolving landscape of healthcare, data analytics plays a pivotal role in enabling informed decision-making processes. The pharmaceutical sector, particularly the homeopathic medicine segment, stands to benefit significantly from the insights derived through data analysis. This project focuses on harnessing the power of data analytics to provide actionable insights for individuals or organizations involved in the homeopathic medicine industry.
+
+## Overview
+This project aims to perform data analytics on homeopathic medicine data scraped from the 1mg website. The objective is to provide insights to help with the selection and analysis of medicines for a homeopathic medicine store.
+
+## Phase: 1
+### Web_scraping 
+Scrape the homeopathic medicine data from online medicine delivery platform 1mg using python library called Beautifulsoup (or similar) and collect information in the given format and make 2 tables using the data
+
 URL = "https://www.1mg.com/categories/homeopathy-57"
 
-Table 1 : `medicine_name`
+### Tables 
+#### Medicine_list
+|   |   |
+| ------------ | ------------ |
+| Name   |  Name of the medicine |
+| Size_of_the_bottle  |  Size of the medicine bottle or pack  |
+| MRP_of_the_bottle  | MRP of the bottle  |
+|  Price_of_the_bottle |  Selling price of the bottle |
+| 1mg_url  | 1mg url where the medicine sold |
 
-Attributes in table - 2:
+#### Medicine_details
 
-`name` - Name of the medicine
+|   |   |
+| ------------ | ------------ |
+| Name  | Name of the medicine  |
+| Brand_name  | Brand name  |
+| Key_benefits  | Key Benefits area (Hair, eye, joint, skin)  |
+| Key_ingredients  | ngredient of medicine  |
+| Rating  | user rating of the medicine   |
+| Number_of_rating  |  Number of people rated that product  |
 
-`size_of_the_bottle` - Size of the medicine bottle or pack
- `MRP_of_the_bottle`  - MRP of the bottle
+## Phase: 2
+### Dashboard 
 
-`price_of_the_bottle`  - Selling price of the bottle
-`1mg_url` - 1mg url where the medicine sold
+After extracting table data through web scraping, we analyze it with statistical calculations and visualization techniques, like graphs and heat maps, to identify trends and patterns. We can then create an interactive dashboard with features like filtering, sorting, and drill-down options for easy-to-understand data presentation and user interaction.
 
-
-Table - 2 : `medicine_details`
-
-Attributes in table - 2:
-
-`name` - Name of the medicine
-
-`brand_name`  - Brand name
-
-`key_benefits` - Key Benefits area (Hair, eye, joint, skin)
-
-`key_ingredients` - Ingredient of medicine
-
-`rating` - user rating of the medicine
-
-`number_of_rating`  - Number of people rated that product
+![image](https://github.com/PenchalaTeja/1mg_Homeopathic-/assets/156883419/c9afdbd4-5ed9-4c96-a3c2-009d467963ad)
 
 
-Following needs to be ensured while scraping:
-
-Once you have the database of 2 tables created.
-
-- You need to generate aggregations and that will help you create dashboard which should be able to help the end user with following insights:
-    - Number of medicine available of different benefit area.
-    - Price range of medicine for each benefit area.
-    - Brand specialization(Key Benefits) of each area.
-    - Average price, min price , max price and number of products for each brand.
-    - Average number of rating for each brand in their specialization products where  the number of rating is not NULL.
-    - Maximum number of times ingredient used in each benefit area.
-    - **Average cost for ingredients.**
-    - Most used ingredient
-    - Which brand has most greater than 4 point review medicine?
-- You are hired in a consultancy firm, one of their client want to open a homeopathic medicine store what is their total cost for open their store. Create an interactive dashboard for them to analyze and select best medicine for their store. (Use benefit area as a filter)
-
-DASHBOARD
-
-![image](https://github.com/PenchalaTeja/1mg_Homeopathic-/assets/156883419/d1c82f5b-14ef-442d-b7cc-8e3bb999bdb6)
 
 
 
